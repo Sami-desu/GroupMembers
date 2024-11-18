@@ -1,0 +1,130 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ff5f6d, #ffc371);
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #4caf50, #8bc34a);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 30px;
+  border-bottom: 4px solid #333;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.container {
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.tab {
+  padding: 15px 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  background-color: #f4f4f4;
+}
+
+.tab.active {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  border-bottom: 2px solid #4caf50;
+}
+.member-content {
+  display: none;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.5s ease;
+}
+
+.member-content.active {
+  display: block;
+  opacity: 1;
+}
+
+.member-content h3 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.member-content p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.member-content img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.member-details {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+}
+.tabs,
+.member-content {
+  transition: all 0.5s ease;
+}
