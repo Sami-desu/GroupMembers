@@ -55,3 +55,28 @@ main {
   margin: 10px;
   color: #666;
 }
+/* Reset CSS cho audio container */
+audio {
+  display: none; /* Ẩn phần audio nguyên bản */
+}
+
+/* Giao diện chính cho nút bật/tắt nhạc */
+.music-control {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+/* Hiệu ứng hover cho nút */
+.music-control:hover {
+  background-color: #0056b3;
+}
